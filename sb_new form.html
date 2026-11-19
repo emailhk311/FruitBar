@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Member Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    form {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 2px solid rgb(105, 78, 20);
+      background-color: rgba(255, 255, 255, 0.35);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 100px minmax(0, 1fr);
+      align-items: start;
+      column-gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .form-row input:not([type="radio"]),
+    .form-row textarea {
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    label {
+      display: inline-block;
+      width: 100px;
+      vertical-align: top;
+    }
+
+    input,
+    textarea {
+      box-sizing: border-box;
+      width: calc(100% - 110px);
+      padding: 8px;
+      border: 1px solid rgb(105, 78, 20);
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    .gender-options {
+      display: inline-block;
+    }
+
+    .gender-options input {
+      width: auto;
+      margin-left: 8px;
+    }
+
+    .gender-options label {
+      width: auto;
+      margin-right: 15px;
+    }
+
+    .actions {
+      text-align: center;
+    }
+
+    .actions input {
+      width: auto;
+      margin: 0 8px;
+      padding: 8px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>New Member Form</h1>
+  <hr>
+
+  <form action="#" method="post">
+    <div class="form-row">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-row">
+      <label>Gender</label>
+      <div class="gender-options">
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <label for="date-of-birth">Date of Birth</label>
+      <input type="date" id="date-of-birth" name="date-of-birth" required>
+    </div>
+
+    <div class="form-row">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" required></textarea>
+    </div>
+
+    <div class="form-row">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-row">
+      <label for="member-id">ID</label>
+      <input type="text" id="member-id" name="member-id" required>
+    </div>
+
+    <div class="form-row">
+      <label for="comment">Comment</label>
+      <textarea id="comment" name="comment"></textarea>
+    </div>
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="actions">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+
+</html>
