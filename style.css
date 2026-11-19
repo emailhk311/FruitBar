@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=UnifrakturMaguntia&display=swap');
+
+
 body {
-  color: black;
-  background-color: rgb(227, 170, 221);
+  color: rgb(105, 78, 20);
+  background-color: rgb(191, 211, 182);
+  text-align: justify;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+h1,
+h2 {
+  font-family: "UnifrakturMaguntia", cursive;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 h1 {
-  color: rgb(15, 2, 26);
   text-align: center;
+  font-size: 36pt;
 }
 
+h2 {
+  font-size: 24pt;
+}
